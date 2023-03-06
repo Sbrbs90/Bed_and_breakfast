@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.header,
+main,
+footer {
+    text-align: center;
+}
+
+h1{
+    margin-bottom: 1rem;
+}
+
+h2 {
+    text-transform: uppercase;
+    margin-bottom: 1.75rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+}
+
+.hamburger {
+    font-size: 3rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    position: relative;
+    background-color: #EE9657;
+}
+
+.hideMenu {
+    display: none;
+}
+
+#menu {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: inherit;
+    width: 100%;
+    text-align: center;
+}
+
+#menu a {
+    display: block;
+    width: 100%;
+    padding: 0.3rem;
+}
+
+#menu a:hover {
+    background-color: black;
+    color: white;
+}
+
+#menu li {
+    list-style: none;
+    margin: 0.75rem;
+}
+
+.hamburger {
+    border: none;
+    background-color: #EE9657;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+/*----------------------------*/
+
+
+nav,
+footer {
+    background-color: #EE9657;
+}
+
+section,
+.header {
+    margin: 3rem 1.5rem;
+}
+
+header {
+    background-image: url("img/main-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70vh;
+}
+
+.header {
+    background-color: rgba(127, 127, 127, 0.7);
+    border-radius: 50px;
+    padding: 1rem;
+}
+
+button {
+    padding: 0.75rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: #D67733;
+    font-size: 1.2rem;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+figure img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#servizi {
+    background-color: #FFDCC3;
+    border: 1px solid black;
+    margin: 0;
+}
+
+#servizi h2 {
+    margin-top: 1.5rem;
+}
+
+.camera,
+.servizio,
+.attività,
+.contatti {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: 1.75rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    width: 100%;
+}
+
+footer {
+    border: 1px solid black;
+    padding: 1rem 1.75rem;
+}
+
+footer article,
+.social {
+    margin-top: 1.75rem;
+}
+
+
+.social h3 {
+    margin-bottom: 1rem;
+}
+
+.social img {
+    margin-left: 1rem;
+}
+
+/*RESPONSIVE*/
+
+@media only screen and (min-width: 610px) {
+    .hamburger {
+        display: none;
+    }
+
+    #menu {
+        position: relative;
+        width: initial;
+    }
+
+    .hideMenu {
+        display: inline;
+    }
+
+    #menu li,
+    #menu a {
+        display: inline;
+    }
+}
+
+
+@media only screen and (min-width: 1200px) {
+
+    section,
+    .header {
+        margin: 6rem 6.5rem 8rem;
+    }
+
+    header {
+
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-weight: 100;
+        font-size: 1.5rem;
+    }
+
+    nav {
+        padding: 0 6.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ul {
+        display: inline;
+    }
+
+    li {
+        list-style: none;
+        display: inline;
+        margin-left: 1.5rem;
+        font-size: 1.5rem;
+
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .header {
+        text-align: left;
+        width: 35%;
+        padding: 2.5rem;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        gap: 2.5rem;
+        text-align: left;
+    }
+
+    figcaption {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem 0;
+    }
+
+    #servizi article {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .attività {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        gap: 2rem;
+    }
+
+    .attività figure img {
+        width: 40vw;
+    }
+
+    .attività-content {
+        margin-top: 1.75rem;
+    }
+
+    #contattaci article {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .form {
+        width: 50%;
+    }
+
+    label {
+        margin-bottom: 0.5rem;
+    }
+
+    .form input,
+    textarea {
+        padding: 1.25rem;
+        border-radius: 8px;
+        border: 1px solid black;
+    }
+
+    textarea {
+        height: 20vh;
+    }
+
+    .btn {
+        width: 25%;
+        float: left;
+        padding: 1rem;
+    }
+
+    footer {
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 6.5rem;
+    }
+
+    .footer-left {
+        width: 50%;
+    }
+
+    .contatti {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    .social {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .social img {
+        margin-left: 2rem;
+    }
+}

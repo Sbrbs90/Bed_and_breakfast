@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa Zoè</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header id="header">
+
+        <nav>
+            <span class="logo"><a href="#">Villa Zoè</a></span>
+            <button class="hamburger" onclick="toggleMenu()">&#8801
+            </button>
+            <ul id="menu">
+                
+                <li><a href="#camere">Camere</a></li>
+                <li><a href="#servizi">Servizi</a></li>
+                <li><a href="#attività">Attività</a></li>
+                <li><a href="">Chiama</a></li>
+            </ul>
+        </nav>
+
+        <div class="header">
+            <h1>Sperimenta la bellezza e la tranquillità del nostro affascinante B&B</h1>
+            <a href="#contattaci"></a><button>Verifica Disponibilità</button></a>
+        </div>
+    </header>
+
+    <main>
+        <section id="camere">
+            <h2>Le Nostre Camere</h2>
+
+            <div class="container">
+                <div class="camera">
+                    <figure>
+                        <img src="img/room1.png" alt="foto di una camera da letto">
+                    </figure>
+                    <figcaption>
+                        <h3>Camera Paradise</h3>
+                        <p>€ 60</p>
+                    </figcaption>
+                    <p>Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum,
+                        ac
+                        aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                        inceptos himenaeos.</p>
+                </div>
+
+                <div class="camera">
+                    <figure>
+                        <img src="img/room1.png" alt="foto di una camera da letto">
+                    </figure>
+                    <figcaption>
+                        <h3>Camera BellaVista</h3>
+                        <p>€ 50</p>
+                    </figcaption>
+                    <p>Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum,
+                        ac
+                        aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                        inceptos himenaeos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="servizi">
+            <h2>Tutto ciò che ti serve e molto altro..</h2>
+            <article>
+                <div class="servizio">
+                    <img src="img/Car Roof Box.png" alt="icona di una macchina">
+                    <p>Parcheggio garantito</p>
+                </div>
+
+                <div class="servizio">
+                    <img src="img/Wi-Fi.png" alt="icona del wifi">
+                    <p>Free Wifi</p>
+                </div>
+
+                <div class="servizio">
+                    <img src="img/Cafe.png" alt="icona di una tazza di caffè">
+                    <p>Colazione inclusa</p>
+                </div>
+
+                <div class="servizio">
+                    <img src="img/Horseback Riding.png" alt="icona di una persona a cavallo">
+                    <p>Escursioni a cavallo</p>
+                </div>
+            </article>
+        </section>
+
+        <section id="attività">
+            <h2>Attività</h2>
+            <div class="attività">
+                <figure>
+                    <img src="img/attività1.png" alt="foto di una persona a cavallo al tramonto">
+                </figure>
+                <div class="attività-content">
+                    <h3>Organizza un'escursione a cavallo</h3>
+                    <p>Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum,
+                        ac
+                        aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                        inceptos himenaeos.</p>
+                </div>
+            </div>
+
+            <div class="attività">
+                <figure>
+                    <img src="img/attività2.png" alt="foto della finestrella di Bologna">
+                </figure>
+                <div class="attività-content">
+                    <h3>Organizza una visita guidata per Bologna</h3>
+                    <p>Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum,
+                        ac
+                        aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                        inceptos himenaeos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contattaci">
+            <h2>Contattaci</h2>
+            <form action="">
+                <article>
+                    <div class="form">
+                        <label for="nome">Nome</label>
+                        <input type="text" placeholder="Nome" required>
+                    </div>
+
+                    <div class="form">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                </article>
+
+                <label for="messaggio">Messaggio</label>
+                <textarea name="messaggio" placeholder="Scrivi il tuo messeggio..."></textarea>
+                <button type="submit" class="btn">Invia</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="footer-left">
+            <span class="logo"><a href="#header">Villa Zoè</a></span>
+            <p>E' un unico Bed and breakfast situato nei pressi di Bologna.
+                Ha la vicinanza alla città e allo stesso tempo la tranquillità della campagna.
+                VIENICI A TROVARE!</p>
+
+            <article>
+                <div class="contatti">
+                    <a href="https://www.google.it/maps/place/Circolo+Ippico+Don+Chisciotte/@44.5408659,11.3738132,17z/data=!3m1!4b1!4m6!3m5!1s0x477fd3307b8bdac5:0xd47fd893a09befcc!8m2!3d44.5408622!4d11.3782979!16s%2Fg%2F1pzr68g4_"
+                        target="_blank"><img src="img/Google Maps Old.png" alt="icona della mappa"></a>
+                    <p>Via del Gomito, 20/3, 40127 Bologna BO</p>
+                </div>
+
+                <div class="contatti">
+                    <img src="img/Ringer Volume.png" alt="icona del telefono"></a>
+                    <p>333-22 44 345</p>
+                </div>
+
+                <div class="contatti">
+                    <img src="img/Composing Mail.png" alt="icona della mail"></a>
+                    <p>villaZoe@yahoo.com</p>
+                </div>
+            </article>
+        </div>
+
+        <div class="social">
+            <h3>Seguici su:</h3>
+            <a href="#" title="facebook"><img src="img/Facebook.png" alt="icona di facebook"></a>
+            <a href="#" title="instagram"><img src="img/Instagram.png" alt="icona di instagram"></a>
+            <a href="#" title="tiktok"><img src="img/TikTok.png" alt="icona di tiktok"></a>
+        </div>
+    </footer>
+</body>
+<script src="toggle.js"></script>
+</html>
